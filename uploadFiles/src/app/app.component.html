@@ -1,0 +1,49 @@
+<h1 style="text-align: center">UploadFiles con NodeJs-MySQL-Angular</h1>
+<hr>
+
+<div style="text-align: center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <form (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                <input type="file" class="form-control-file" accept="image/*" name="image"
+                  (change)="selectImage($event)">
+                <button type="submit" class="btn btn-outline-primary">Upload</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <img class="img-fluid" [src]="imgURL" class="card-img-top">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<h2 style="text-align: center">IMAGENES SUBIDAS</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let imagen of  this.imagenes">
+      <div class="card text-center">
+        <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+          {{imagen.id}} . {{imagen.nombre}}
+        </div>
+        <div class="card-body">
+          <img class="card-img-top" src="http://localhost:3000/{{imagen.imagen}}" alt="">
+        </div>
+        <button class="btn btn-outline-danger btn-block " id="{{imagen.id}}"
+          (click)="deleteImg(imagen.id)">Eliminar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
