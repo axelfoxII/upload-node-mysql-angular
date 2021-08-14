@@ -7,5 +7,5 @@ UPLOADFILES
 recuerde para instalcion --> npm install
 
 SERVER
-recuerde para instalcion --> npm install
+recuerde para instalcion --> npm install<br>
 NOTA: En el Server crear la carpeta---> "uploads"
