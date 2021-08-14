@@ -5,4 +5,4 @@ PROYECTO UPLOADFILES
 
 recuerde para instalcion --> npm install
 
-NOTA:En el Server crear la carpeta uploads
+NOTA: En el Server crear la carpeta---> "uploads"
