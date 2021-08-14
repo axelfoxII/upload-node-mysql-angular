@@ -4,3 +4,5 @@ PROYECTO UPLOADFILES
 - angular
 
 recuerde para instalcion --> npm install
+
+NOTA:En el Server crear la carpeta uploads
